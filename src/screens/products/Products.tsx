@@ -2,8 +2,8 @@ import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { SafeAreaView } from 'react-native';
 import { Button, Text } from 'react-native-elements';
-import styles from './product-styles';
 import Counter from '../../components/counter/Counter';
+import styles from './product-styles';
 
 const Products = () => {
   const navigation = useNavigation<any>();
@@ -16,7 +16,6 @@ const Products = () => {
     <SafeAreaView style={styles.container}>
       <Text h4>Soy la página de productos</Text>
       <Counter />
-
       <Button onPress={onPressButton} title="Ir a la página de detalles" />
     </SafeAreaView>
   );
