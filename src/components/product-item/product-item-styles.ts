@@ -2,27 +2,19 @@ import { Dimensions, StyleSheet } from 'react-native';
 import theme from '../../app/theme';
 
 const styles = StyleSheet.create({
-  card: {
+  item: {
     display: 'flex',
     width: Dimensions.get('screen').width - 50,
     padding: 5,
     margin: 6,
     backgroundColor: theme.colors.white,
     shadowColor: theme.colors.black,
-    shadowOffset: {
-      width: 0,
-      height: 1
-    },
-    shadowOpacity: 0.22,
-    shadowRadius: 2.22,
-
-    elevation: 3
   },
-  topContainer: {
+  superior: {
     height: 250,
     marginBottom: 15
   },
-  brandContainer: {
+  marca: {
     position: 'absolute',
     bottom: -10,
     alignSelf: 'center',
@@ -31,22 +23,22 @@ const styles = StyleSheet.create({
     paddingVertical: 6,
     borderRadius: 20
   },
-  middleContainer: {
+  inferior: {
     paddingHorizontal: 10
   },
-  brandText: {
-    color: theme.colors.primary,
+  textoMarca: {
+    color: theme.colors.white,
     fontSize: 12,
     fontWeight: '700'
   },
-  nameText: {
+  nombre: {
     fontWeight: '700'
   },
-  priceText: {
+  precio: {
     fontSize: 20,
     fontWeight: '700'
   },
-  cardImage: {
+  imagen: {
     position: 'relative',
     display: 'flex',
     justifyContent: 'center',
@@ -55,7 +47,7 @@ const styles = StyleSheet.create({
     height: 250,
     aspectRatio: 1
   },
-  actionContainer: {
+  boton: {
     marginTop: 20
   }
 });
